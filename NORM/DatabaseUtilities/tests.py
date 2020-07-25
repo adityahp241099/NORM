@@ -24,10 +24,10 @@ class TestInsert(unittest.TestCase):
 
 
         self.main["Cars"].append({"Manufacturer":"Ferrari","Model":"Enzo","Year":1999})
-        self.main["Cars"].append([{"Manufacturer":"Ferrari","Model":"Enzo","Year":1999},{"Manufacturer":"Audi","Model":"R8",Year:2007}])
+        self.main["Cars"].append([{"Manufacturer":"Ferrari","Model":"Enzo","Year":1999},{"Manufacturer":"Audi","Model":"R8","Year":2007}])
 
 
-        self.assertEqual(f"{self.game_piece},{str(self.game_piece)}","u,u")
+
 class TestFetch(unittest.TestCase):
     def setUp(self):
         from NORM import SQLiteHandler as db
@@ -96,9 +96,9 @@ class TestDelete(unittest.TestCase):
 
         del self.main["Cars"][self.main["Cars"]["Manufacturer"]=="Ferrari"]
         #Deletes all the rows where Manufacturer is Ferrari
-    # def test_delete_column(self):
-    #
-    #     del self.main["Cars"]["Year"]
+    def test_delete_column(self):
+
+        del self.main["Cars"]["Year"]
         #This feature is not working due to sqlite3 constraints#Deletes the column year
     def test_delete_table(self):
 
