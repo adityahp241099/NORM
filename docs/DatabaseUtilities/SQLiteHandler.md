@@ -1,14 +1,16 @@
-# SQLiteHandler
+## SQLiteHandler
 V1.0
-- Utility for semi-pythonic database.
-- Keeps a buffer to highly serialize transactions.
-- Systematic logger.
+<!-- - Utility for semi-pythonic database. -->
+- Keeps a buffer to serialize transactions (even if threaded).
+<!-- - Systematic logger. -->
 
 With pythonic syntax, store data in an sql file.
 
 ## Known Issues / Features that can be added later
 - Vulnerable to SQLInjection
 - Storage of Arrays and Dicts can be done by normalisation
+- SQLite3 does not allow the deletion of columns directly. (Unit test added)
+- Queries for a column is not working. (Unit test added)
 
 
 
