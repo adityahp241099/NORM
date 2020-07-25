@@ -1,5 +1,9 @@
 # NORM
+[![Build Status](https://travis-ci.com/adityahp241099/NORM.svg?token=7EjtFiw3xFehTd96VAU7&branch=master)](https://travis-ci.com/adityahp241099/NORM)
+
 <b>N</b>ot an <b>ORM</b> (NORM) was created by me during my third semester of BTech as a side project. A pandas like interface for SQL.
+
+
 
 
 ## SQLiteHandler
